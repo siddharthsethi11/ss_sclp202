@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jdbc="http://xsd.tns.tibco.com/amf/models/sharedresource/jdbc" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:subject="http://xsd.tns.tibco.com/trinity/models/identity/subject" xmi:id="_4KHzAT8PEembBq469JEbBw" name="smartturbine101.module.JDBCConnectionResource" type="jdbc:JdbcDataSource">
+  <jndi:reference xmi:id="_4KMEcD8PEembBq469JEbBw" key="subjectJndiName" type="subject:SubjectConfiguration" value=""/>
+  <jndi:configuration xsi:type="jdbc:JdbcDataSource" xmi:id="_4KMEcT8PEembBq469JEbBw" username="inventory" password="#!tBA4tET4K+HwPEo6XKnNS6/mh3l6vY0DLMi66XVLgy4=">
+    <connectionConfig xsi:type="jdbc:NonXaConnection" xmi:id="_4KMEcj8PEembBq469JEbBw" jdbcDriver="tibcosoftwareinc.jdbc.postgresql.PostgreSQLDriver" dbURL="jdbc:tibcosoftwareinc:postgresql://inventory.c7hcav6marm8.us-east-1.rds.amazonaws.com:5432;DatabaseName=inventory"/>
+  </jndi:configuration>
+</jndi:namedResource>
