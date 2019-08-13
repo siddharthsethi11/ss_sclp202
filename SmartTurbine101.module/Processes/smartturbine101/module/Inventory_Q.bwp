@@ -901,8 +901,8 @@
                                     <layoutConstraint
                                     height="40"
                                     width="40"
-                                    x="287"
-                                    xsi:type="notation:Bounds" y="143"/>
+                                    x="395"
+                                    xsi:type="notation:Bounds" y="186"/>
                                     </children>
 
                                     <styles xsi:type="notation:DrawerStyle"/>
@@ -926,7 +926,7 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity"/>
 
                                     <layoutConstraint
-                                    height="244"
+                                    height="282"
                                     width="766" xsi:type="notation:Bounds"/>
                                     </children>
 
@@ -1099,7 +1099,8 @@
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
             <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@links/@children.2"/>
-            <bendpoints points="[25, -3, -119, 15]$[120, -15, -24, 3]" xsi:type="notation:RelativeBendpoints"/>
+            <bendpoints
+                points="[25, 0, -101, -72]$[63, 0, -63, -72]$[63, 118, -63, 46]$[126, 118, 0, 46]$[126, 97, 0, 25]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
         <edges
             source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2"
