@@ -1159,7 +1159,7 @@
             sca-bpel:privateProperty="true" sca-bpel:property="yes"
             sca-bpel:sharedResourceType="{http://xsd.tns.tibco.com/amf/models/sharedresource/jdbc}JdbcDataSource" type="xsd:string">
             <bpws:from>
-                <bpws:literal>smartturbine101.module.JDBCConnectionResource</bpws:literal>
+                <bpws:literal>smartturbine101.module.JDBCConnectionResource1</bpws:literal>
             </bpws:from>
         </bpws:variable>
         <bpws:variable element="ns1:jdbcQueryActivityInput"
@@ -1167,13 +1167,6 @@
         <bpws:variable element="ns2:resultSet" name="AllProducts" sca-bpel:internal="true"/>
         <bpws:variable element="ns3:ActivityErrorData"
             name="_error_AllProducts" sca-bpel:internal="true"/>
-        <bpws:variable name="jdbcProperty1" sca-bpel:hotUpdate="false"
-            sca-bpel:privateProperty="true" sca-bpel:property="yes"
-            sca-bpel:sharedResourceType="{http://xsd.tns.tibco.com/amf/models/sharedresource/jdbc}JdbcDataSource" type="xsd:string">
-            <bpws:from>
-                <bpws:literal>smartturbine101.module.JDBCConnectionResource</bpws:literal>
-            </bpws:from>
-        </bpws:variable>
         <bpws:variable element="ns4:inventoryDBJsonElement"
             name="RenderJSON-input" sca-bpel:internal="true"/>
         <bpws:variable element="ns5:ActivityOutputClass"
@@ -1207,9 +1200,11 @@
                     <bpws:scope name="scope1">
                         <bpws:flow name="flow1">
                             <bpws:links>
-                                <bpws:link name="EmptyToRenderJSON1" tibex:linkType="SUCCESSWITHCONDITION"/>
+                                <bpws:link name="EmptyToRenderJSON1_v2"
+                                    tibex:label="v2" tibex:linkType="SUCCESSWITHCONDITION"/>
                                 <bpws:link name="AllProductsToEmpty" tibex:linkType="SUCCESS"/>
-                                <bpws:link name="EmptyToRenderJSON" tibex:linkType="SUCCESSWITHCONDITION"/>
+                                <bpws:link name="EmptyToRenderJSON_v1"
+                                    tibex:label="v1" tibex:linkType="SUCCESSWITHCONDITION"/>
                                 <bpws:link name="RenderJSONTogetOut" tibex:linkType="SUCCESS"/>
                                 <bpws:link name="RenderJSON1TogetOut" tibex:linkType="SUCCESS"/>
                             </bpws:links>
@@ -1239,7 +1234,7 @@
                                     outputVariable="RenderJSON1"
                                     tibex:xpdlId="606099e6-56ca-478d-8334-d8f9660fc0b3" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                                     <bpws:targets>
-                                    <bpws:target linkName="EmptyToRenderJSON1"/>
+                                    <bpws:target linkName="EmptyToRenderJSON1_v2"/>
                                     </bpws:targets>
                                     <bpws:sources>
                                     <bpws:source linkName="RenderJSON1TogetOut"/>
@@ -1275,14 +1270,14 @@
                                     <bpws:target linkName="AllProductsToEmpty"/>
                                 </bpws:targets>
                                 <bpws:sources>
-                                    <bpws:source linkName="EmptyToRenderJSON">
+                                    <bpws:source linkName="EmptyToRenderJSON_v1">
                                     <tibex:DesignExpression>
                                     <tibex:expression
                                     expression="$get/parameters/tns:inventory_qGetParameters/tns:version=&quot;v1&quot;" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
                                     </tibex:DesignExpression>
                                     <bpws:transitionCondition expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"><![CDATA[$get.parameters/tns:version="v1"]]></bpws:transitionCondition>
                                     </bpws:source>
-                                    <bpws:source linkName="EmptyToRenderJSON1">
+                                    <bpws:source linkName="EmptyToRenderJSON1_v2">
                                     <tibex:DesignExpression>
                                     <tibex:expression
                                     expression="$get/parameters/tns:inventory_qGetParameters/tns:version=&quot;v2&quot;" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
@@ -1352,7 +1347,7 @@
                                     outputVariable="RenderJSON"
                                     tibex:xpdlId="53528ff4-9b04-444e-9d8c-a3f0352a5f81" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                                     <bpws:targets>
-                                    <bpws:target linkName="EmptyToRenderJSON"/>
+                                    <bpws:target linkName="EmptyToRenderJSON_v1"/>
                                     </bpws:targets>
                                     <bpws:sources>
                                     <bpws:source linkName="RenderJSONTogetOut"/>

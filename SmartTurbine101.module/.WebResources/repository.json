@@ -1,17 +1,5 @@
 {
-    "records": [{
-        "name": "Cloud",
-        "items": [{
-            "localTimestamp": 1551769731000,
-            "localURI": "/SmartTurbine101.module/Service Descriptors/SmartTurbine_1.0.1.json",
-            "disabled": false,
-            "remoteTimestamp": 1551746180000,
-            "localHash": "7a18d59191335883d753a931e6626cbdda174299",
-            "remoteId": "275",
-            "remoteHash": "7a18d59191335883d753a931e6626cbdda174299"
-        }],
-        "url": "https://integration.cloud.tibco.com:443"
-    }],
+    "records": [],
     "resources": [
         {
             "location": "Service Descriptors/smartturbine101.module.Resource-Resource.json",

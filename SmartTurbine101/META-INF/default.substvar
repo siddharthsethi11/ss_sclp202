@@ -2,6 +2,14 @@
 <repository xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xmlns = "http://www.tibco.com/xmlns/repo/types/2002">
 	<globalVariables>
 		<globalVariable>
+			<name>DB_URL</name>
+			<value>jdbc:tibcosoftwareinc:postgresql://18.206.195.176:5432;DatabaseName=inventory</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+		</globalVariable>
+		<globalVariable>
 			<name>//SmartTurbine101.module//BW.APPNODE.NAME</name>
 			<value></value>
 			<deploymentSettable>false</deploymentSettable>
@@ -56,6 +64,14 @@
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
 			<isOverride>false</isOverride>
+		</globalVariable>
+		<globalVariable>
+			<name>//SmartTurbine101.module//DB_URL</name>
+			<value>%%DB_URL%%</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>true</isOverride>
 		</globalVariable>
 	</globalVariables>
 </repository>

@@ -1035,7 +1035,7 @@
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.0"/>
                                     <layoutConstraint
-                                    height="401" width="774" xsi:type="notation:Bounds"/>
+                                    height="328" width="756" xsi:type="notation:Bounds"/>
                                     </children>
                                     <styles xsi:type="notation:DrawerStyle"/>
                                     <styles xsi:type="notation:SortingStyle"/>
@@ -1049,7 +1049,7 @@
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity"/>
-                                    <layoutConstraint height="411"
+                                    <layoutConstraint height="354"
                                     width="854" xsi:type="notation:Bounds"/>
                                 </children>
                                 <styles xsi:type="notation:SortingStyle"/>
@@ -1078,7 +1078,7 @@
             </children>
             <styles fontName="Segoe UI" lineColor="0" xsi:type="notation:ShapeStyle"/>
             <element href="//0/@process"/>
-            <layoutConstraint height="487" width="1199" xsi:type="notation:Bounds"/>
+            <layoutConstraint height="430" width="1199" xsi:type="notation:Bounds"/>
         </children>
         <styles xsi:type="notation:DiagramStyle"/>
         <element href="//0"/>
@@ -1175,7 +1175,7 @@
             sca-bpel:privateProperty="true" sca-bpel:property="yes"
             sca-bpel:sharedResourceType="{http://xsd.tns.tibco.com/amf/models/sharedresource/jdbc}JdbcDataSource" type="xsd:string">
             <bpws:from>
-                <bpws:literal>smartturbine101.module.JDBCConnectionResource</bpws:literal>
+                <bpws:literal>smartturbine101.module.JDBCConnectionResource1</bpws:literal>
             </bpws:from>
         </bpws:variable>
         <bpws:variable element="ns1:jdbcQueryActivityInput"
@@ -1183,13 +1183,6 @@
         <bpws:variable element="ns2:resultSet" name="AllProducts" sca-bpel:internal="true"/>
         <bpws:variable element="ns3:ActivityErrorData"
             name="_error_AllProducts" sca-bpel:internal="true"/>
-        <bpws:variable name="jdbcProperty1" sca-bpel:hotUpdate="false"
-            sca-bpel:privateProperty="true" sca-bpel:property="yes"
-            sca-bpel:sharedResourceType="{http://xsd.tns.tibco.com/amf/models/sharedresource/jdbc}JdbcDataSource" type="xsd:string">
-            <bpws:from>
-                <bpws:literal>smartturbine101.module.JDBCConnectionResource</bpws:literal>
-            </bpws:from>
-        </bpws:variable>
         <bpws:variable element="ns4:inventoryDBJsonElement"
             name="RenderJSON-input" sca-bpel:internal="true"/>
         <bpws:variable element="ns5:ActivityOutputClass"
