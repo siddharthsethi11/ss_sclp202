@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <bpws:process exitOnStandardFault="no"
-    name="smartturbine101.module.Invertory_Header"
-    suppressJoinFailure="yes"
+    name="smartturbine101.module.Invertory_H" suppressJoinFailure="yes"
     targetNamespace="http://xmlns.example.com/20190317184308"
     xmlns:bpws="http://docs.oasis-open.org/wsbpel/2.0/process/executable"
     xmlns:info="http://www.tibco.com/bw/process/info"
@@ -451,7 +450,7 @@
             <wsdl:portType name="invetory_h"
                 tibex:bw.rest.apipath="/invetory_h"
                 tibex:bw.rest.basepath="Invetory_H"
-                tibex:bw.rest.resource="Service Descriptors/smartturbine101.module.Invertory_Header-Invetory_H.json"
+                tibex:bw.rest.resource="Service Descriptors/smartturbine101.module.Invertory_H-Invetory_H.json"
                 tibex:bw.rest.resource.source="generated" tibex:source="bw.rest.service">
                 <wsdl:documentation>Summary about the new REST service.</wsdl:documentation>
                 <wsdl:operation name="get">
@@ -474,7 +473,9 @@
         xmlns:bwnotation="http://tns.tibco.com/bw/runtime/BWNotation"
         xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
         <children type="2001">
-            <children type="5001"/>
+            <children type="5001">
+                <element href="//0/@process"/>
+            </children>
             <children type="3001">
                 <styles xsi:type="notation:SortingStyle"/>
                 <styles xsi:type="notation:FilteringStyle"/>
@@ -483,10 +484,12 @@
             <children type="3002">
                 <styles xsi:type="notation:SortingStyle"/>
                 <styles xsi:type="notation:FilteringStyle"/>
+                <element href="//0/@process"/>
             </children>
             <children type="3003">
                 <styles xsi:type="notation:SortingStyle"/>
                 <styles xsi:type="notation:FilteringStyle"/>
+                <element href="//0/@process"/>
             </children>
             <children type="3004">
                 <children type="4018">
@@ -496,13 +499,16 @@
                                 <children type="4005">
                                     <children type="3007">
                                     <children type="4010">
-                                    <children type="5002"/>
+                                    <children type="5002">
+                                    <element href="//0/@process/@activity/@activity/@activities.0"/>
+                                    </children>
                                     <children type="3010">
                                     <children type="4013">
                                     <children type="4017">
                                     <styles
                                     fontName="Segoe UI"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.0"/>
 
                                     <layoutConstraint xsi:type="notation:Bounds"/>
                                     </children>
@@ -510,6 +516,7 @@
                                     <styles
                                     fontName="Segoe UI"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.0"/>
 
                                     <layoutConstraint xsi:type="notation:Bounds"/>
                                     </children>
@@ -517,6 +524,7 @@
                                     <styles
                                     fontName="Segoe UI"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.0"/>
 
                                     <layoutConstraint xsi:type="notation:Bounds"/>
                                     </children>
@@ -524,6 +532,7 @@
                                     <styles
                                     fontName="Segoe UI"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.0"/>
 
                                     <layoutConstraint xsi:type="notation:Bounds"/>
                                     </children>
@@ -538,6 +547,7 @@
                                     </children>
                                     <styles xsi:type="notation:SortingStyle"/>
                                     <styles xsi:type="notation:FilteringStyle"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.0"/>
                                     </children>
                                     <children type="3011">
                                     <children type="4011">
@@ -547,6 +557,7 @@
                                     <styles
                                     fontName="Segoe UI"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.0"/>
 
                                     <layoutConstraint xsi:type="notation:Bounds"/>
                                     </children>
@@ -554,6 +565,7 @@
                                     <styles
                                     fontName="Segoe UI"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.0"/>
 
                                     <layoutConstraint xsi:type="notation:Bounds"/>
                                     </children>
@@ -561,6 +573,7 @@
                                     <styles
                                     fontName="Segoe UI"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.0"/>
 
                                     <layoutConstraint xsi:type="notation:Bounds"/>
                                     </children>
@@ -568,6 +581,7 @@
                                     <styles
                                     fontName="Segoe UI"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.0"/>
 
                                     <layoutConstraint xsi:type="notation:Bounds"/>
                                     </children>
@@ -585,6 +599,7 @@
                                     </children>
                                     <styles xsi:type="notation:SortingStyle"/>
                                     <styles xsi:type="notation:FilteringStyle"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0"/>
                                     </children>
                                     <children type="3013">
                                     <children type="4018">
@@ -606,14 +621,7 @@
                                     fontName="Segoe UI"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
 
-                                    <layoutConstraint xsi:type="notation:Bounds"/>
-                                    </children>
-
-                                    <children type="4017">
-
-                                    <styles
-                                    fontName="Segoe UI"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.2"/>
 
                                     <layoutConstraint xsi:type="notation:Bounds"/>
                                     </children>
@@ -624,6 +632,8 @@
                                     fontName="Segoe UI"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
 
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.2"/>
+
                                     <layoutConstraint xsi:type="notation:Bounds"/>
                                     </children>
 
@@ -632,6 +642,19 @@
                                     <styles
                                     fontName="Segoe UI"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.2"/>
+
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+
+                                    <children type="4017">
+
+                                    <styles
+                                    fontName="Segoe UI"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.2"/>
 
                                     <layoutConstraint xsi:type="notation:Bounds"/>
                                     </children>
@@ -776,8 +799,8 @@
                                     <layoutConstraint
                                     height="40"
                                     width="40"
-                                    x="225"
-                                    xsi:type="notation:Bounds" y="68"/>
+                                    x="231"
+                                    xsi:type="notation:Bounds" y="21"/>
                                     </children>
 
                                     <children type="4002 bw.restjson.JsonRender">
@@ -840,8 +863,8 @@
                                     <layoutConstraint
                                     height="40"
                                     width="40"
-                                    x="225"
-                                    xsi:type="notation:Bounds" y="196"/>
+                                    x="221"
+                                    xsi:type="notation:Bounds" y="298"/>
                                     </children>
 
                                     <children type="4002 com.tibco.bw.core.design.process.editor.Activity_4002_Empty">
@@ -913,6 +936,8 @@
                                     <styles xsi:type="notation:SortingStyle"/>
 
                                     <styles xsi:type="notation:FilteringStyle"/>
+
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity"/>
                                     </children>
 
                                     <styles
@@ -929,13 +954,15 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity"/>
 
                                     <layoutConstraint
-                                    height="328"
+                                    height="383"
                                     width="720" xsi:type="notation:Bounds"/>
                                     </children>
 
                                     <styles xsi:type="notation:SortingStyle"/>
 
                                     <styles xsi:type="notation:FilteringStyle"/>
+
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity"/>
                                     </children>
 
                                     <styles
@@ -949,12 +976,13 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity"/>
 
                                     <layoutConstraint
-                                    height="328"
+                                    height="383"
                                     width="723"
                                     x="15" xsi:type="notation:Bounds"/>
                                     </children>
                                     <styles xsi:type="notation:SortingStyle"/>
                                     <styles xsi:type="notation:FilteringStyle"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity"/>
                                     </children>
                                     <styles
                                     fontName="Segoe UI"
@@ -964,11 +992,12 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity"/>
 
                                     <layoutConstraint
-                                    height="352"
+                                    height="407"
                                     width="763" xsi:type="notation:Bounds"/>
                                     </children>
                                     <styles xsi:type="notation:SortingStyle"/>
                                     <styles xsi:type="notation:FilteringStyle"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0"/>
                                     </children>
                                     <children type="3016">
                                     <children type="4002">
@@ -976,6 +1005,7 @@
                                     <styles
                                     fontName="Segoe UI"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.1"/>
 
                                     <layoutConstraint xsi:type="notation:Bounds"/>
                                     </children>
@@ -983,6 +1013,7 @@
                                     <styles
                                     fontName="Segoe UI"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.1"/>
 
                                     <layoutConstraint xsi:type="notation:Bounds"/>
                                     </children>
@@ -990,6 +1021,7 @@
                                     <styles
                                     fontName="Segoe UI"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.1"/>
 
                                     <layoutConstraint xsi:type="notation:Bounds"/>
                                     </children>
@@ -997,6 +1029,7 @@
                                     <styles
                                     fontName="Segoe UI"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.1"/>
 
                                     <layoutConstraint xsi:type="notation:Bounds"/>
                                     </children>
@@ -1014,6 +1047,7 @@
                                     </children>
                                     <styles xsi:type="notation:SortingStyle"/>
                                     <styles xsi:type="notation:FilteringStyle"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.0"/>
                                     </children>
                                     <styles
                                     fontName="Segoe UI"
@@ -1022,12 +1056,13 @@
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.0"/>
                                     <layoutConstraint
-                                    height="371"
+                                    height="426"
                                     width="825"
                                     x="2" xsi:type="notation:Bounds"/>
                                     </children>
                                     <styles xsi:type="notation:SortingStyle"/>
                                     <styles xsi:type="notation:FilteringStyle"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.0"/>
                                     </children>
                                     <styles fontName="Segoe UI"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
@@ -1035,7 +1070,7 @@
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.0"/>
                                     <layoutConstraint
-                                    height="328" width="756" xsi:type="notation:Bounds"/>
+                                    height="421" width="756" xsi:type="notation:Bounds"/>
                                     </children>
                                     <styles xsi:type="notation:DrawerStyle"/>
                                     <styles xsi:type="notation:SortingStyle"/>
@@ -1049,17 +1084,18 @@
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity"/>
-                                    <layoutConstraint height="354"
+                                    <layoutConstraint height="466"
                                     width="854" xsi:type="notation:Bounds"/>
                                 </children>
                                 <styles xsi:type="notation:SortingStyle"/>
                                 <styles xsi:type="notation:FilteringStyle"/>
+                                <element href="//0/@process/@activity"/>
                             </children>
                             <styles fontName="Segoe UI" lineColor="0" xsi:type="notation:ShapeStyle"/>
                             <styles xsi:type="bwnotation:BackgroundStyle"/>
                             <styles xsi:type="bwnotation:ResizingStyle"/>
                             <element href="//0/@process/@activity"/>
-                            <layoutConstraint height="411" width="857" xsi:type="notation:Bounds"/>
+                            <layoutConstraint height="466" width="857" xsi:type="notation:Bounds"/>
                         </children>
                         <styles xsi:type="notation:SortingStyle"/>
                         <styles xsi:type="notation:FilteringStyle"/>
@@ -1069,7 +1105,7 @@
                     <styles xsi:type="bwnotation:BackgroundStyle"/>
                     <styles xsi:type="bwnotation:ResizingStyle"/>
                     <element href="//0/@process/@activity"/>
-                    <layoutConstraint height="435" width="857" x="1"
+                    <layoutConstraint height="490" width="857" x="1"
                         xsi:type="notation:Bounds" y="1"/>
                 </children>
                 <styles xsi:type="notation:SortingStyle"/>
@@ -1078,7 +1114,7 @@
             </children>
             <styles fontName="Segoe UI" lineColor="0" xsi:type="notation:ShapeStyle"/>
             <element href="//0/@process"/>
-            <layoutConstraint height="430" width="1199" xsi:type="notation:Bounds"/>
+            <layoutConstraint height="542" width="1199" xsi:type="notation:Bounds"/>
         </children>
         <styles xsi:type="notation:DiagramStyle"/>
         <element href="//0"/>
@@ -1215,8 +1251,11 @@
                         <bpws:flow name="flow1">
                             <bpws:links>
                                 <bpws:link name="AllProductsToEmpty" tibex:linkType="SUCCESS"/>
-                                <bpws:link name="EmptyToRenderJSON" tibex:linkType="SUCCESSWITHCONDITION"/>
-                                <bpws:link name="EmptyToRenderJSON1" tibex:linkType="SUCCESSWITHCONDITION"/>
+                                <bpws:link name="EmptyToRenderJSON_usd"
+                                    tibex:label="usd" tibex:linkType="SUCCESSWITHCONDITION"/>
+                                <bpws:link
+                                    name="EmptyToRenderJSON1_euro"
+                                    tibex:label="euro" tibex:linkType="SUCCESSWITHCONDITION"/>
                                 <bpws:link name="RenderJSONTogetOut" tibex:linkType="SUCCESS"/>
                                 <bpws:link name="RenderJSON1TogetOut" tibex:linkType="SUCCESS"/>
                                 <bpws:link
@@ -1309,7 +1348,7 @@
                                     outputVariable="RenderJSON"
                                     tibex:xpdlId="a8379a7a-36bd-4b40-bfb2-cb132cce5ba0" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                                     <bpws:targets>
-                                    <bpws:target linkName="EmptyToRenderJSON"/>
+                                    <bpws:target linkName="EmptyToRenderJSON_usd"/>
                                     </bpws:targets>
                                     <bpws:sources>
                                     <bpws:source linkName="RenderJSONTogetOut"/>
@@ -1347,7 +1386,7 @@
                                     outputVariable="RenderJSON1"
                                     tibex:xpdlId="a115856a-1e53-4f69-86c2-12a65635e67e" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                                     <bpws:targets>
-                                    <bpws:target linkName="EmptyToRenderJSON1"/>
+                                    <bpws:target linkName="EmptyToRenderJSON1_euro"/>
                                     </bpws:targets>
                                     <bpws:sources>
                                     <bpws:source linkName="RenderJSON1TogetOut"/>
@@ -1383,19 +1422,19 @@
                                     <bpws:target linkName="AllProductsToEmpty"/>
                                 </bpws:targets>
                                 <bpws:sources>
-                                    <bpws:source linkName="EmptyToRenderJSON">
+                                    <bpws:source linkName="EmptyToRenderJSON_usd">
                                     <tibex:DesignExpression>
                                     <tibex:expression
-                                    expression="$get/httpHeaders/tns:invetory_hGetHeader/version=&quot;v1&quot;" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
+                                    expression="$get/httpHeaders/tns:invetory_hGetHeader/version=&quot;usd&quot;" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
                                     </tibex:DesignExpression>
-                                    <bpws:transitionCondition expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"><![CDATA[$get.httpHeaders/version="v1"]]></bpws:transitionCondition>
+                                    <bpws:transitionCondition expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"><![CDATA[$get.httpHeaders/version="usd"]]></bpws:transitionCondition>
                                     </bpws:source>
-                                    <bpws:source linkName="EmptyToRenderJSON1">
+                                    <bpws:source linkName="EmptyToRenderJSON1_euro">
                                     <tibex:DesignExpression>
                                     <tibex:expression
-                                    expression="$get/httpHeaders/tns:invetory_hGetHeader/version=&quot;v2&quot;" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
+                                    expression="$get/httpHeaders/tns:invetory_hGetHeader/version=&quot;eur&quot;" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
                                     </tibex:DesignExpression>
-                                    <bpws:transitionCondition expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"><![CDATA[$get.httpHeaders/version="v2"]]></bpws:transitionCondition>
+                                    <bpws:transitionCondition expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"><![CDATA[$get.httpHeaders/version="eur"]]></bpws:transitionCondition>
                                     </bpws:source>
                                 </bpws:sources>
                             </bpws:empty>

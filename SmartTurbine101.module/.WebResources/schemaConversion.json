@@ -58,5 +58,15 @@
         "jsonSchemaLocation": "/SmartTurbine101.module/Service Descriptors/smartturbine101.module.Inventory_Q-inventory_q.json",
         "conversionType": "linked",
         "xsdSchemaTargetNamespace": "/T1551769731196Converted/JsonSchema"
+    },
+    {
+        "jsonSchemaLocation": "/SmartTurbine101.module/Service Descriptors/smartturbine101.module.Inventory_P-usd-inventory.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "/T1551769731196Converted/JsonSchema"
+    },
+    {
+        "jsonSchemaLocation": "/SmartTurbine101.module/Service Descriptors/smartturbine101.module.Inventory_P-Resource.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "/T1551769731196Converted/JsonSchema"
     }
 ]}

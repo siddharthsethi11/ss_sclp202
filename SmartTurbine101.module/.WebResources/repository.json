@@ -1,5 +1,9 @@
 {
-    "records": [],
+    "records": [{
+        "name": "Cloud",
+        "items": [],
+        "url": "https://integration.cloud.tibco.com:443"
+    }],
     "resources": [
         {
             "location": "Service Descriptors/smartturbine101.module.Resource-Resource.json",
@@ -95,6 +99,18 @@
         },
         {
             "location": "Service Descriptors/smartturbine101.module.Inventory_Q-inventory_q.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/smartturbine101.module.Invertory_H-Invetory_H.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/smartturbine101.module.Inventory_P-usd-inventory.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/smartturbine101.module.Inventory_P-Resource.json",
             "type": "generated"
         }
     ]
