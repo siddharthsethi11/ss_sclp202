@@ -112,6 +112,14 @@
         {
             "location": "Service Descriptors/smartturbine101.module.Inventory_P-Resource.json",
             "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/smartturbine101.module.Inventory_P.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/smartturbine101.module.Inventory_H-Invetory_H.json",
+            "type": "generated"
         }
     ]
 }

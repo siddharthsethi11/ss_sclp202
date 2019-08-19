@@ -9,19 +9,19 @@
   "basePath" : "/",
   "schemes" : [ "http" ],
   "paths" : {
-    "/usd/inventory" : {
+    "/eur/inventory" : {
       "get" : {
         "summary" : "",
         "description" : "",
-        "operationId" : "get-usd-inventory",
+        "operationId" : "get-eur-inventory",
         "consumes" : [ "application/json" ],
         "produces" : [ "application/json" ],
         "parameters" : [ ],
         "responses" : {
           "200" : {
-            "description" : "a InventoryAll_Response to be returned",
+            "description" : "a Response_DynamicPriceAll to be returned",
             "schema" : {
-              "$ref" : "#/definitions/InventoryAll_Response"
+              "$ref" : "#/definitions/Response_DynamicPriceAll"
             }
           }
         }
@@ -43,7 +43,7 @@
         }
       }
     },
-    "InventoryAll_Response" : {
+    "Response_DynamicPriceAll" : {
       "type" : "object",
       "properties" : {
         "dialogAction" : {

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <bpws:process exitOnStandardFault="no"
-    name="smartturbine101.module.Invertory_H" suppressJoinFailure="yes"
+    name="smartturbine101.module.Inventory_H" suppressJoinFailure="yes"
     targetNamespace="http://xmlns.example.com/20190317184308"
     xmlns:bpws="http://docs.oasis-open.org/wsbpel/2.0/process/executable"
     xmlns:info="http://www.tibco.com/bw/process/info"
@@ -450,7 +450,7 @@
             <wsdl:portType name="invetory_h"
                 tibex:bw.rest.apipath="/invetory_h"
                 tibex:bw.rest.basepath="Invetory_H"
-                tibex:bw.rest.resource="Service Descriptors/smartturbine101.module.Invertory_H-Invetory_H.json"
+                tibex:bw.rest.resource="Service Descriptors/smartturbine101.module.Inventory_H-Invetory_H.json"
                 tibex:bw.rest.resource.source="generated" tibex:source="bw.rest.service">
                 <wsdl:documentation>Summary about the new REST service.</wsdl:documentation>
                 <wsdl:operation name="get">

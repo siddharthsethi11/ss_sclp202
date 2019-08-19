@@ -9,14 +9,20 @@
   "basePath" : "/",
   "schemes" : [ "http" ],
   "paths" : {
-    "/usd/inventory" : {
+    "/invetory_h" : {
       "get" : {
         "summary" : "",
         "description" : "",
-        "operationId" : "get-usd-inventory",
+        "operationId" : "get-invetory_h",
         "consumes" : [ "application/json" ],
         "produces" : [ "application/json" ],
-        "parameters" : [ ],
+        "parameters" : [ {
+          "name" : "version",
+          "in" : "header",
+          "description" : "",
+          "type" : "string",
+          "required" : false
+        } ],
         "responses" : {
           "200" : {
             "description" : "a InventoryAll_Response to be returned",
