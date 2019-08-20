@@ -3,7 +3,7 @@
 	<globalVariables>
 		<globalVariable>
 			<name>DB_URL</name>
-			<value>jdbc:tibcosoftwareinc:postgresql://18.206.195.176:5432;DatabaseName=inventory</value>
+			<value>jdbc:tibcosoftwareinc:postgresql://localhost:5432;DatabaseName=inventory</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>

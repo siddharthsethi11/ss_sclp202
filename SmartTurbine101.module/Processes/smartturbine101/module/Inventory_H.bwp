@@ -861,10 +861,10 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.5"/>
 
                                     <layoutConstraint
-                                    height="40"
+                                    height="8"
                                     width="40"
-                                    x="221"
-                                    xsi:type="notation:Bounds" y="298"/>
+                                    x="279"
+                                    xsi:type="notation:Bounds" y="274"/>
                                     </children>
 
                                     <children type="4002 com.tibco.bw.core.design.process.editor.Activity_4002_Empty">
@@ -954,7 +954,7 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity"/>
 
                                     <layoutConstraint
-                                    height="383"
+                                    height="359"
                                     width="720" xsi:type="notation:Bounds"/>
                                     </children>
 
@@ -976,7 +976,7 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity"/>
 
                                     <layoutConstraint
-                                    height="383"
+                                    height="359"
                                     width="723"
                                     x="15" xsi:type="notation:Bounds"/>
                                     </children>
@@ -992,7 +992,7 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity"/>
 
                                     <layoutConstraint
-                                    height="407"
+                                    height="383"
                                     width="763" xsi:type="notation:Bounds"/>
                                     </children>
                                     <styles xsi:type="notation:SortingStyle"/>
@@ -1056,7 +1056,7 @@
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.0"/>
                                     <layoutConstraint
-                                    height="426"
+                                    height="402"
                                     width="825"
                                     x="2" xsi:type="notation:Bounds"/>
                                     </children>
@@ -1070,7 +1070,7 @@
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.0"/>
                                     <layoutConstraint
-                                    height="421" width="756" xsi:type="notation:Bounds"/>
+                                    height="432" width="756" xsi:type="notation:Bounds"/>
                                     </children>
                                     <styles xsi:type="notation:DrawerStyle"/>
                                     <styles xsi:type="notation:SortingStyle"/>
@@ -1192,6 +1192,10 @@
             namespace="/T1551769731196Converted/JsonSchema" prefix="tns1"/>
         <tibex:namespaceItem
             namespace="http://xmlns.example.com/Invetory_H/headerParameters" prefix="tns2"/>
+        <tibex:namespaceItem
+            namespace="http://www.w3.org/2001/XMLSchema" prefix="xsd"/>
+        <tibex:namespaceItem
+            namespace="http://tns.tibco.com/bw/json/1551424115249" prefix="tns3"/>
     </tibex:NamespaceRegistry>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://tns.tibco.com/bw/REST"/>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="/T1551769731196Converted/JsonSchema"/>
@@ -1275,10 +1279,10 @@
                                 tibex:xpdlId="2acd4553-fb9b-4288-affa-a0c97ed7c01a" variable="getOut-input">
                                 <tibex:inputBindings>
                                     <tibex:partBinding
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://xmlns.example.com/20190317184308PLT&quot; xmlns:tns1=&quot;/T1551769731196Converted/JsonSchema&quot; xmlns:tns2=&quot;http://xmlns.example.com/Invetory_H/headerParameters&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;get.httpHeaders&quot;/>&#xa;    &lt;xsl:param name=&quot;RenderJSON&quot;/>&#xa;    &lt;xsl:param name=&quot;RenderJSON1&quot;/>&#xa;    &lt;xsl:template name=&quot;getOut-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns1:InventoryAll_Response>&#xa;            &lt;tns1:dialogAction>&#xa;                &lt;tns1:type>&#xa;                    &lt;xsl:value-of select=&quot;&amp;quot;closed&amp;quot;&quot;/>&#xa;                &lt;/tns1:type>&#xa;                &lt;tns1:fulfillmentState>&#xa;                    &lt;xsl:value-of select=&quot;&amp;quot;fulfilled&amp;quot;&quot;/>&#xa;                &lt;/tns1:fulfillmentState>&#xa;                &lt;tns1:message>&#xa;                    &lt;tns1:contentType>&#xa;                        &lt;xsl:value-of select=&quot;&amp;quot;text&amp;quot;&quot;/>&#xa;                    &lt;/tns1:contentType>&#xa;                    &lt;xsl:choose>&#xa;                        &lt;xsl:when test=&quot;$get.httpHeaders/version=&amp;quot;v1&amp;quot;&quot;>&#xa;                            &lt;tns1:content>&#xa;                                &lt;xsl:value-of select=&quot;$RenderJSON/jsonString&quot;/>&#xa;                            &lt;/tns1:content>&#xa;                        &lt;/xsl:when>&#xa;                        &lt;xsl:otherwise>&#xa;                            &lt;tns1:content>&#xa;                                &lt;xsl:value-of select=&quot;$RenderJSON1/jsonString&quot;/>&#xa;                            &lt;/tns1:content>&#xa;                        &lt;/xsl:otherwise>&#xa;                    &lt;/xsl:choose>&#xa;                &lt;/tns1:message>&#xa;            &lt;/tns1:dialogAction>&#xa;        &lt;/tns1:InventoryAll_Response>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://xmlns.example.com/20190317184308PLT&quot; xmlns:tns1=&quot;/T1551769731196Converted/JsonSchema&quot; xmlns:tns2=&quot;http://xmlns.example.com/Invetory_H/headerParameters&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;get.httpHeaders&quot;/>&#xa;    &lt;xsl:param name=&quot;RenderJSON&quot;/>&#xa;    &lt;xsl:param name=&quot;RenderJSON1&quot;/>&#xa;    &lt;xsl:template name=&quot;getOut-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns1:InventoryAll_Response>&#xa;            &lt;tns1:dialogAction>&#xa;                &lt;tns1:type>&#xa;                    &lt;xsl:value-of select=&quot;&amp;quot;closed&amp;quot;&quot;/>&#xa;                &lt;/tns1:type>&#xa;                &lt;tns1:fulfillmentState>&#xa;                    &lt;xsl:value-of select=&quot;&amp;quot;fulfilled&amp;quot;&quot;/>&#xa;                &lt;/tns1:fulfillmentState>&#xa;                &lt;tns1:message>&#xa;                    &lt;tns1:contentType>&#xa;                        &lt;xsl:value-of select=&quot;&amp;quot;text&amp;quot;&quot;/>&#xa;                    &lt;/tns1:contentType>&#xa;                    &lt;xsl:choose>&#xa;                        &lt;xsl:when test=&quot;$get.httpHeaders/version=&amp;quot;usd&amp;quot;&quot;>&#xa;                            &lt;tns1:content>&#xa;                                &lt;xsl:value-of select=&quot;$RenderJSON/jsonString&quot;/>&#xa;                            &lt;/tns1:content>&#xa;                        &lt;/xsl:when>&#xa;                        &lt;xsl:otherwise>&#xa;                            &lt;tns1:content>&#xa;                                &lt;xsl:value-of select=&quot;$RenderJSON1/jsonString&quot;/>&#xa;                            &lt;/tns1:content>&#xa;                        &lt;/xsl:otherwise>&#xa;                    &lt;/xsl:choose>&#xa;                &lt;/tns1:message>&#xa;            &lt;/tns1:dialogAction>&#xa;        &lt;/tns1:InventoryAll_Response>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                                 </tibex:inputBindings>
                                 <tibex:inputBinding expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:tns="http://xmlns.example.com/20190317184308PLT" xmlns:tns1="/T1551769731196Converted/JsonSchema" xmlns:tns2="http://xmlns.example.com/Invetory_H/headerParameters" version="2.0"&gt;&lt;xsl:param name="RenderJSON"/&gt;&lt;xsl:param name="RenderJSON1"/&gt;&lt;xsl:param name="get"/&gt;&lt;xsl:template name="getOut-input" match="/"&gt;&lt;tns:getResponse&gt;&lt;item&gt;&lt;tns1:InventoryAll_Response&gt;&lt;tns1:dialogAction&gt;&lt;tns1:type&gt;&lt;xsl:value-of select="&amp;quot;closed&amp;quot;"/&gt;&lt;/tns1:type&gt;&lt;tns1:fulfillmentState&gt;&lt;xsl:value-of select="&amp;quot;fulfilled&amp;quot;"/&gt;&lt;/tns1:fulfillmentState&gt;&lt;tns1:message&gt;&lt;tns1:contentType&gt;&lt;xsl:value-of select="&amp;quot;text&amp;quot;"/&gt;&lt;/tns1:contentType&gt;&lt;xsl:choose&gt;&lt;xsl:when test="$get/httpHeaders/tns2:invetory_hGetHeader/version=&amp;quot;v1&amp;quot;"&gt;&lt;tns1:content&gt;&lt;xsl:value-of select="$RenderJSON/jsonString"/&gt;&lt;/tns1:content&gt;&lt;/xsl:when&gt;&lt;xsl:otherwise&gt;&lt;tns1:content&gt;&lt;xsl:value-of select="$RenderJSON1/jsonString"/&gt;&lt;/tns1:content&gt;&lt;/xsl:otherwise&gt;&lt;/xsl:choose&gt;&lt;/tns1:message&gt;&lt;/tns1:dialogAction&gt;&lt;/tns1:InventoryAll_Response&gt;&lt;/item&gt;&lt;/tns:getResponse&gt;&lt;/xsl:template&gt;&lt;/xsl:stylesheet&gt;</tibex:inputBinding>
+&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:tns="http://xmlns.example.com/20190317184308PLT" xmlns:tns1="/T1551769731196Converted/JsonSchema" xmlns:tns2="http://xmlns.example.com/Invetory_H/headerParameters" version="2.0"&gt;&lt;xsl:param name="RenderJSON"/&gt;&lt;xsl:param name="RenderJSON1"/&gt;&lt;xsl:param name="get"/&gt;&lt;xsl:template name="getOut-input" match="/"&gt;&lt;tns:getResponse&gt;&lt;item&gt;&lt;tns1:InventoryAll_Response&gt;&lt;tns1:dialogAction&gt;&lt;tns1:type&gt;&lt;xsl:value-of select="&amp;quot;closed&amp;quot;"/&gt;&lt;/tns1:type&gt;&lt;tns1:fulfillmentState&gt;&lt;xsl:value-of select="&amp;quot;fulfilled&amp;quot;"/&gt;&lt;/tns1:fulfillmentState&gt;&lt;tns1:message&gt;&lt;tns1:contentType&gt;&lt;xsl:value-of select="&amp;quot;text&amp;quot;"/&gt;&lt;/tns1:contentType&gt;&lt;xsl:choose&gt;&lt;xsl:when test="$get/httpHeaders/tns2:invetory_hGetHeader/version=&amp;quot;usd&amp;quot;"&gt;&lt;tns1:content&gt;&lt;xsl:value-of select="$RenderJSON/jsonString"/&gt;&lt;/tns1:content&gt;&lt;/xsl:when&gt;&lt;xsl:otherwise&gt;&lt;tns1:content&gt;&lt;xsl:value-of select="$RenderJSON1/jsonString"/&gt;&lt;/tns1:content&gt;&lt;/xsl:otherwise&gt;&lt;/xsl:choose&gt;&lt;/tns1:message&gt;&lt;/tns1:dialogAction&gt;&lt;/tns1:InventoryAll_Response&gt;&lt;/item&gt;&lt;/tns:getResponse&gt;&lt;/xsl:template&gt;&lt;/xsl:stylesheet&gt;</tibex:inputBinding>
                                 <bpws:targets>
                                     <bpws:target linkName="RenderJSONTogetOut"/>
                                     <bpws:target linkName="RenderJSON1TogetOut"/>
@@ -1355,7 +1359,7 @@
                                     </bpws:sources>
                                     <tibex:inputBindings>
                                     <tibex:inputBinding
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns3=&quot;http://tns.tibco.com/bw/json/1551424115249&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;AllProducts&quot;/>&#xa;    &lt;xsl:template name=&quot;RenderJSON-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns3:inventoryDBJsonElement>&#xa;            &lt;tns3:products>&#xa;                &lt;xsl:for-each select=&quot;$AllProducts/Record&quot;>&#xa;                    &lt;tns3:product>&#xa;                        &lt;xsl:if test=&quot;product_id&quot;>&#xa;                            &lt;tns3:productid>&#xa;                                &lt;xsl:value-of select=&quot;product_id&quot;/>&#xa;                            &lt;/tns3:productid>&#xa;                        &lt;/xsl:if>&#xa;                        &lt;xsl:if test=&quot;product_name&quot;>&#xa;                            &lt;tns3:productname>&#xa;                                &lt;xsl:value-of select=&quot;product_name&quot;/>&#xa;                            &lt;/tns3:productname>&#xa;                        &lt;/xsl:if>&#xa;                        &lt;xsl:if test=&quot;product_quantity&quot;>&#xa;                            &lt;tns3:quantity>&#xa;                                &lt;xsl:value-of select=&quot;product_quantity&quot;/>&#xa;                            &lt;/tns3:quantity>&#xa;                        &lt;/xsl:if>&#xa;                        &lt;tns3:unit_price>&#xa;                            &lt;xsl:value-of select=&quot;concat(&amp;quot;$&amp;quot;,xsd:string(unit_price))&quot;/>&#xa;                        &lt;/tns3:unit_price>&#xa;                        &lt;xsl:if test=&quot;SerialNo&quot;>&#xa;                            &lt;tns3:Serial_No>&#xa;                                &lt;xsl:value-of select=&quot;SerialNo&quot;/>&#xa;                            &lt;/tns3:Serial_No>&#xa;                        &lt;/xsl:if>&#xa;                    &lt;/tns3:product>&#xa;                &lt;/xsl:for-each>&#xa;            &lt;/tns3:products>&#xa;        &lt;/tns3:inventoryDBJsonElement>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns3=&quot;http://tns.tibco.com/bw/json/1551424115249&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;AllProducts&quot;/>&lt;xsl:template name=&quot;RenderJSON-input&quot; match=&quot;/&quot;>&lt;tns3:inventoryDBJsonElement>&lt;tns3:products>&lt;xsl:for-each select=&quot;$AllProducts/Record&quot;>&lt;tns3:product>&lt;xsl:if test=&quot;product_id&quot;>&lt;tns3:productid>&lt;xsl:value-of select=&quot;product_id&quot;/>&lt;/tns3:productid>&lt;/xsl:if>&lt;xsl:if test=&quot;product_name&quot;>&lt;tns3:productname>&lt;xsl:value-of select=&quot;product_name&quot;/>&lt;/tns3:productname>&lt;/xsl:if>&lt;xsl:if test=&quot;product_quantity&quot;>&lt;tns3:quantity>&lt;xsl:value-of select=&quot;product_quantity&quot;/>&lt;/tns3:quantity>&lt;/xsl:if>&lt;tns3:unit_price>&lt;xsl:value-of select=&quot;concat(&amp;quot;$&amp;quot;,xsd:string(unit_price))&quot;/>&lt;/tns3:unit_price>&lt;xsl:if test=&quot;SerialNo&quot;>&lt;tns3:Serial_No>&lt;xsl:value-of select=&quot;SerialNo&quot;/>&lt;/tns3:Serial_No>&lt;/xsl:if>&lt;/tns3:product>&lt;/xsl:for-each>&lt;/tns3:products>&lt;/tns3:inventoryDBJsonElement>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                                     </tibex:inputBindings>
                                     <tibex:config>
                                     <bwext:BWActivity
