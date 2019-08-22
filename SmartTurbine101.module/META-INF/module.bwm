@@ -30,30 +30,6 @@
     </scaext:binding>
     <scact:bindingAdjunct xmi:id="_wV4_sUjpEemQdajVkIZP-g" bindingName="RestService3"/>
   </sca:service>
-  <sca:service xmi:id="_LInxgsIvEemfbNLxI5a2Rw" name="eur-inventory" promote="ComponentInventory_P/eur-inventory">
-    <sca:interface.wsdl xmi:id="_LIoYkMIvEemfbNLxI5a2Rw" interface="http://xmlns.example.com/20190819031155PLT#wsdl.interface(eur-inventory)" scaext:wsdlLocation="../Processes/smartturbine101/module/Inventory_P.bwp"/>
-    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_LIoYkcIvEemfbNLxI5a2Rw" name="RestService1" path="/eur/inventory" docBasePath="http://localhost:7777/SmartTurbine101.module" docResourcePath="resource" basePath="/" connector="smartturbine101.module.Process" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/smartturbine101.module.Inventory_P-Resource.json">
-      <operation xmi:id="_LIo_oMIvEemfbNLxI5a2Rw" operationName="get" nickname="get-eur-inventory" httpMethod="GET" responseStyle="element">
-        <clientFormat>json</clientFormat>
-        <clientRequestFormat>json</clientRequestFormat>
-      </operation>
-      <parameters xmi:id="_LIvtUMIvEemfbNLxI5a2Rw"/>
-      <advancedConfig xmi:id="_LIoYksIvEemfbNLxI5a2Rw" blockingQueueSize="2147483647"/>
-    </scaext:binding>
-    <scact:bindingAdjunct xmi:id="_LIo_ocIvEemfbNLxI5a2Rw" bindingName="RestService1"/>
-  </sca:service>
-  <sca:service xmi:id="_-OqKksIwEemfbNLxI5a2Rw" name="usd-inventory" promote="ComponentInventory_P/usd-inventory">
-    <sca:interface.wsdl xmi:id="_-OqxocIwEemfbNLxI5a2Rw" interface="http://xmlns.example.com/20190819031155PLT#wsdl.interface(usd-inventory)" scaext:wsdlLocation="../Processes/smartturbine101/module/Inventory_P.bwp"/>
-    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_-OrYsMIwEemfbNLxI5a2Rw" name="RestService2" path="/usd/inventory" docBasePath="http://localhost:7777/SmartTurbine101.module" docResourcePath="resource" basePath="/" connector="smartturbine101.module.Process" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/smartturbine101.module.Inventory_P-Resource.json">
-      <operation xmi:id="_-OrYssIwEemfbNLxI5a2Rw" operationName="get" nickname="get-usd-inventory" httpMethod="GET" responseStyle="element">
-        <clientFormat>json</clientFormat>
-        <clientRequestFormat>json</clientRequestFormat>
-      </operation>
-      <parameters xmi:id="_-O1wwMIwEemfbNLxI5a2Rw"/>
-      <advancedConfig xmi:id="_-OrYscIwEemfbNLxI5a2Rw" blockingQueueSize="2147483647"/>
-    </scaext:binding>
-    <scact:bindingAdjunct xmi:id="_-OrYs8IwEemfbNLxI5a2Rw" bindingName="RestService2"/>
-  </sca:service>
   <sca:property xmi:id="_Ae3XwD8NEembBq469JEbBw" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_AfEMED8NEembBq469JEbBw" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_AfN9ED8NEembBq469JEbBw" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
@@ -72,15 +48,6 @@
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_mzNvkUjpEemQdajVkIZP-g" processName="smartturbine101.module.Inventory_Q"/>
     <sca:service xmi:id="_wV3xkEjpEemQdajVkIZP-g" name="inventory_q">
       <sca:interface.wsdl xmi:id="_wV3xkUjpEemQdajVkIZP-g" interface="http://xmlns.example.com/20190317191937#wsdl.interface(inventory_q)" scaext:wsdlLocation="../Processes/smartturbine101/module/Inventory_Q.bwp"/>
-    </sca:service>
-  </sca:component>
-  <sca:component xmi:id="_GRit0MIvEemfbNLxI5a2Rw" name="ComponentInventory_P" compositeext:version="1.0.0.qualifier">
-    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_GRit0cIvEemfbNLxI5a2Rw" processName="smartturbine101.module.Inventory_P"/>
-    <sca:service xmi:id="_LInxgMIvEemfbNLxI5a2Rw" name="eur-inventory">
-      <sca:interface.wsdl xmi:id="_LInxgcIvEemfbNLxI5a2Rw" interface="http://xmlns.example.com/20190819031155PLT#wsdl.interface(eur-inventory)"/>
-    </sca:service>
-    <sca:service xmi:id="_-OqKkMIwEemfbNLxI5a2Rw" name="usd-inventory">
-      <sca:interface.wsdl xmi:id="_-OqKkcIwEemfbNLxI5a2Rw" interface="http://xmlns.example.com/20190819031155PLT#wsdl.interface(usd-inventory)"/>
     </sca:service>
   </sca:component>
 </sca:composite>

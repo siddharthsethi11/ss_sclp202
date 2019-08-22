@@ -439,13 +439,9 @@
             </wsdl:message>
             <wsdl:message name="get4XXFaultMessage">
                 <wsdl:part element="extns:client4XXError" name="clientError"/>
-                <wsdl:part element="extns2:invetory_hGetResponseHeader"
-                    name="httpFaultHeaders" tibex:source="bw.rest"/>
             </wsdl:message>
             <wsdl:message name="get5XXFaultMessage">
                 <wsdl:part element="extns:server5XXError" name="serverError"/>
-                <wsdl:part element="extns2:invetory_hGetResponseHeader"
-                    name="httpFaultHeaders" tibex:source="bw.rest"/>
             </wsdl:message>
             <wsdl:portType name="invetory_h"
                 tibex:bw.rest.apipath="/invetory_h"

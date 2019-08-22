@@ -11,4 +11,14 @@
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="invetory_hGetHeader" type="tns:invetory_hGetHeaderType"/>
+    <xs:complexType name="invetory_hGetResponseHeaderType">
+    <xs:complexContent>
+      <xs:extension base="Q1:httpTransportResponseHeaders">
+        <xs:sequence>
+          <xs:element maxOccurs="1" minOccurs="0" name="responseHeader1" type="xs:string"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+    <xs:element name="invetory_hGetResponseHeader" type="tns:invetory_hGetResponseHeaderType"/>
 </xs:schema>
