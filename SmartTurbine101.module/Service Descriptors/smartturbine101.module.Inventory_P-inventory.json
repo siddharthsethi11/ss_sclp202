@@ -5,41 +5,23 @@
     "title" : "Summary about the new REST service.",
     "description" : "Summary about the new REST service."
   },
-  "host" : "localhost:8084",
+  "host" : "localhost:8083",
   "basePath" : "/",
   "schemes" : [ "http" ],
   "paths" : {
-    "/v1/inventory" : {
+    "/inventory/usd" : {
       "get" : {
         "summary" : "",
         "description" : "",
-        "operationId" : "get-v1-inventory",
+        "operationId" : "get-inventory-usd",
         "consumes" : [ "application/json" ],
         "produces" : [ "application/json" ],
         "parameters" : [ ],
         "responses" : {
           "200" : {
-            "description" : "a InventoryAll_Response to be returned",
+            "description" : "a inventoryallv1GetParameters to be returned",
             "schema" : {
-              "$ref" : "#/definitions/InventoryAll_Response"
-            }
-          }
-        }
-      }
-    },
-    "/v2/inventory" : {
-      "get" : {
-        "summary" : "",
-        "description" : "",
-        "operationId" : "get-v2-inventory",
-        "consumes" : [ "application/json" ],
-        "produces" : [ "application/json" ],
-        "parameters" : [ ],
-        "responses" : {
-          "200" : {
-            "description" : "a InventoryAll_Response to be returned",
-            "schema" : {
-              "$ref" : "#/definitions/InventoryAll_Response"
+              "$ref" : "#/definitions/inventoryallv1GetParameters"
             }
           }
         }
@@ -47,38 +29,9 @@
     }
   },
   "definitions" : {
-    "dialogAction" : {
+    "inventoryallv1GetParameters" : {
       "type" : "object",
-      "properties" : {
-        "type" : {
-          "type" : "string"
-        },
-        "fulfillmentState" : {
-          "type" : "string"
-        },
-        "message" : {
-          "$ref" : "#/definitions/message"
-        }
-      }
-    },
-    "InventoryAll_Response" : {
-      "type" : "object",
-      "properties" : {
-        "dialogAction" : {
-          "$ref" : "#/definitions/dialogAction"
-        }
-      }
-    },
-    "message" : {
-      "type" : "object",
-      "properties" : {
-        "contentType" : {
-          "type" : "string"
-        },
-        "content" : {
-          "type" : "string"
-        }
-      }
+      "properties" : { }
     }
   }
 }

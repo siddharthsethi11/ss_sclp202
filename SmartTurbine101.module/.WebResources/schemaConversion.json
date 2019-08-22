@@ -68,5 +68,15 @@
         "jsonSchemaLocation": "/SmartTurbine101.module/Service Descriptors/smartturbine101.module.Inventory_P-Resource.json",
         "conversionType": "linked",
         "xsdSchemaTargetNamespace": "/T1551769731196Converted/JsonSchema"
+    },
+    {
+        "jsonSchemaLocation": "/SmartTurbine101.module/Service Descriptors/smartturbine101.module.Inventory_P-inventory.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://xmlns.example.com/InventoryAllV1/parameters"
+    },
+    {
+        "jsonSchemaLocation": "/SmartTurbine101.module/Service Descriptors/smartturbine101.module.Inventory_P-Inventory-usd.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "/T1551766170793Converted/JsonSchema"
     }
 ]}
