@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <bpws:process exitOnStandardFault="no"
     name="smartturbine101.module.Inventory_P" suppressJoinFailure="yes"
-    targetNamespace="http://xmlns.example.com/20190822081305"
+    targetNamespace="http://xmlns.example.com/20190826151954"
     xmlns:bpws="http://docs.oasis-open.org/wsbpel/2.0/process/executable"
     xmlns:info="http://www.tibco.com/bw/process/info"
     xmlns:ns="http://www.tibco.com/pe/EngineTypes"
-    xmlns:ns0="http://xmlns.example.com/20190822081305PLT"
-    xmlns:ns1="http://www.tibco.com/namespaces/tnt/plugins/jdbc+17fd86be-aa40-4953-8fb0-c1f16c644f6f+input"
-    xmlns:ns2="http://www.tibco.com/namespaces/tnt/plugins/jdbc+17fd86be-aa40-4953-8fb0-c1f16c644f6f+output"
+    xmlns:ns0="http://xmlns.example.com/20190826151954PLT"
+    xmlns:ns1="http://www.tibco.com/namespaces/tnt/plugins/jdbc+0a3659e9-fd9e-409d-9c51-3c3a9001cb80+input"
+    xmlns:ns2="http://www.tibco.com/namespaces/tnt/plugins/jdbc+0a3659e9-fd9e-409d-9c51-3c3a9001cb80+output"
     xmlns:ns3="http://tns.tibco.com/bw/palette/internal/activityerror+bw.jdbc.JDBCQuery"
     xmlns:ns4="http://tns.tibco.com/bw/json/1551424115249"
-    xmlns:ns5="activity.jsonRender.output+1f6f4457-ed3f-4955-8bc3-b5105c761b6f+ActivityOutputType"
+    xmlns:ns5="activity.jsonRender.output+6c045152-3cf6-47ea-82c4-765512dfd208+ActivityOutputType"
     xmlns:ns6="http://tns.tibco.com/bw/palette/internal/activityerror+bw.restjson.JsonRender"
-    xmlns:ns7="http://www.tibco.com/namespaces/tnt/plugins/jdbc+1cc88c2a-1f88-4b7d-aba7-358943433e78+input"
-    xmlns:ns8="http://www.tibco.com/namespaces/tnt/plugins/jdbc+1cc88c2a-1f88-4b7d-aba7-358943433e78+output"
-    xmlns:ns9="activity.jsonRender.output+354bb2e8-81e9-4589-8f43-00a7f0d2c843+ActivityOutputType"
+    xmlns:ns7="http://www.tibco.com/namespaces/tnt/plugins/jdbc+cc580b30-25ac-446b-8b53-9d34e2896b50+input"
+    xmlns:ns8="http://www.tibco.com/namespaces/tnt/plugins/jdbc+cc580b30-25ac-446b-8b53-9d34e2896b50+output"
+    xmlns:ns9="activity.jsonRender.output+084707fd-f865-455e-b6e3-ed6e07e1b2e6+ActivityOutputType"
     xmlns:sca="http://docs.oasis-open.org/ns/opencsa/sca/200912"
     xmlns:sca-bpel="http://docs.oasis-open.org/ns/opencsa/sca-bpel/200801"
     xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"
@@ -181,8 +181,8 @@
             <element name="DuplicateKeyException" type="tns:DuplicateKeyExceptionType"/>
         </schema>
         <schema
-            targetNamespace="http://www.tibco.com/namespaces/tnt/plugins/jdbc+17fd86be-aa40-4953-8fb0-c1f16c644f6f+input"
-            xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.tibco.com/namespaces/tnt/plugins/jdbc+17fd86be-aa40-4953-8fb0-c1f16c644f6f+input">
+            targetNamespace="http://www.tibco.com/namespaces/tnt/plugins/jdbc+0a3659e9-fd9e-409d-9c51-3c3a9001cb80+input"
+            xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.tibco.com/namespaces/tnt/plugins/jdbc+0a3659e9-fd9e-409d-9c51-3c3a9001cb80+input">
             <element name="jdbcQueryActivityInput">
                 <complexType>
                     <sequence>
@@ -197,8 +197,8 @@
             </element>
         </schema>
         <schema
-            targetNamespace="http://www.tibco.com/namespaces/tnt/plugins/jdbc+17fd86be-aa40-4953-8fb0-c1f16c644f6f+output"
-            xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.tibco.com/namespaces/tnt/plugins/jdbc+17fd86be-aa40-4953-8fb0-c1f16c644f6f+output">
+            targetNamespace="http://www.tibco.com/namespaces/tnt/plugins/jdbc+0a3659e9-fd9e-409d-9c51-3c3a9001cb80+output"
+            xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.tibco.com/namespaces/tnt/plugins/jdbc+0a3659e9-fd9e-409d-9c51-3c3a9001cb80+output">
             <element name="resultSet">
                 <complexType>
                     <sequence>
@@ -305,8 +305,8 @@
             </complexType>
         </schema>
         <schema
-            targetNamespace="activity.jsonRender.output+1f6f4457-ed3f-4955-8bc3-b5105c761b6f+ActivityOutputType"
-            xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="activity.jsonRender.output+1f6f4457-ed3f-4955-8bc3-b5105c761b6f+ActivityOutputType">
+            targetNamespace="activity.jsonRender.output+6c045152-3cf6-47ea-82c4-765512dfd208+ActivityOutputType"
+            xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="activity.jsonRender.output+6c045152-3cf6-47ea-82c4-765512dfd208+ActivityOutputType">
             <complexType name="ActivityOutputClassType">
                 <sequence>
                     <element maxOccurs="1" minOccurs="1"
@@ -404,8 +404,8 @@
             </complexType>
         </schema>
         <schema
-            targetNamespace="http://www.tibco.com/namespaces/tnt/plugins/jdbc+1cc88c2a-1f88-4b7d-aba7-358943433e78+input"
-            xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.tibco.com/namespaces/tnt/plugins/jdbc+1cc88c2a-1f88-4b7d-aba7-358943433e78+input">
+            targetNamespace="http://www.tibco.com/namespaces/tnt/plugins/jdbc+cc580b30-25ac-446b-8b53-9d34e2896b50+input"
+            xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.tibco.com/namespaces/tnt/plugins/jdbc+cc580b30-25ac-446b-8b53-9d34e2896b50+input">
             <element name="jdbcQueryActivityInput">
                 <complexType>
                     <sequence>
@@ -420,8 +420,8 @@
             </element>
         </schema>
         <schema
-            targetNamespace="http://www.tibco.com/namespaces/tnt/plugins/jdbc+1cc88c2a-1f88-4b7d-aba7-358943433e78+output"
-            xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.tibco.com/namespaces/tnt/plugins/jdbc+1cc88c2a-1f88-4b7d-aba7-358943433e78+output">
+            targetNamespace="http://www.tibco.com/namespaces/tnt/plugins/jdbc+cc580b30-25ac-446b-8b53-9d34e2896b50+output"
+            xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.tibco.com/namespaces/tnt/plugins/jdbc+cc580b30-25ac-446b-8b53-9d34e2896b50+output">
             <element name="resultSet">
                 <complexType>
                     <sequence>
@@ -450,8 +450,8 @@
             </element>
         </schema>
         <schema
-            targetNamespace="activity.jsonRender.output+354bb2e8-81e9-4589-8f43-00a7f0d2c843+ActivityOutputType"
-            xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="activity.jsonRender.output+354bb2e8-81e9-4589-8f43-00a7f0d2c843+ActivityOutputType">
+            targetNamespace="activity.jsonRender.output+084707fd-f865-455e-b6e3-ed6e07e1b2e6+ActivityOutputType"
+            xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="activity.jsonRender.output+084707fd-f865-455e-b6e3-ed6e07e1b2e6+ActivityOutputType">
             <complexType name="ActivityOutputClassType">
                 <sequence>
                     <element maxOccurs="1" minOccurs="1"
@@ -461,12 +461,12 @@
             <element name="ActivityOutputClass" type="tns:ActivityOutputClassType"/>
         </schema>
         <wsdl:definitions
-            targetNamespace="http://xmlns.example.com/20190822081305PLT"
+            targetNamespace="http://xmlns.example.com/20190826151954PLT"
             xmlns:extns="/T1551766170793Converted/JsonSchema"
             xmlns:extns1="http://tns.tibco.com/bw/REST"
             xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype"
             xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"
-            xmlns:tns="http://xmlns.example.com/20190822081305PLT"
+            xmlns:tns="http://xmlns.example.com/20190826151954PLT"
             xmlns:vprop="http://docs.oasis-open.org/wsbpel/2.0/varprop"
             xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
             <plnk:partnerLinkType name="partnerLinkType">
@@ -534,7 +534,7 @@
         </wsdl:definitions>
     </tibex:Types>
     <tibex:ProcessInfo callable="false" createdBy="Administrator"
-        createdOn="Thu Aug 22 08:13:05 UTC 2019" description=""
+        createdOn="Mon Aug 26 15:19:54 UTC 2019" description=""
         extraErrorVars="true" modifiers="public"
         productVersion="6.5.0 HF4 V99 2018-11-21" scalable="true"
         singleton="true" stateless="true" type="IT"/>
@@ -718,8 +718,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.2"/>
 
                                     <layoutConstraint
-                                    x="291"
-                                    xsi:type="notation:Bounds" y="23"/>
+                                    x="245"
+                                    xsi:type="notation:Bounds" y="10"/>
                                     </children>
 
                                     <children type="4002 bw.jdbc.JDBCQuery">
@@ -774,8 +774,8 @@
                                     <layoutConstraint
                                     height="40"
                                     width="40"
-                                    x="-10"
-                                    xsi:type="notation:Bounds" y="28"/>
+                                    x="-8"
+                                    xsi:type="notation:Bounds" y="15"/>
                                     </children>
 
                                     <children type="4002">
@@ -828,8 +828,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.4"/>
 
                                     <layoutConstraint
-                                    x="119"
-                                    xsi:type="notation:Bounds" y="28"/>
+                                    x="111"
+                                    xsi:type="notation:Bounds" y="15"/>
                                     </children>
 
                                     <styles xsi:type="notation:DrawerStyle"/>
@@ -853,8 +853,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity"/>
 
                                     <layoutConstraint
-                                    height="118"
-                                    width="443" xsi:type="notation:Bounds"/>
+                                    height="108"
+                                    width="381" xsi:type="notation:Bounds"/>
                                     </children>
 
                                     <styles xsi:type="notation:SortingStyle"/>
@@ -873,8 +873,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity"/>
 
                                     <layoutConstraint
-                                    height="118"
-                                    width="446"
+                                    height="108"
+                                    width="384"
                                     x="15" xsi:type="notation:Bounds"/>
                                     </children>
                                     <styles xsi:type="notation:SortingStyle"/>
@@ -888,8 +888,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity"/>
 
                                     <layoutConstraint
-                                    height="142"
-                                    width="486" xsi:type="notation:Bounds"/>
+                                    height="132"
+                                    width="424" xsi:type="notation:Bounds"/>
                                     </children>
                                     <styles xsi:type="notation:SortingStyle"/>
                                     <styles xsi:type="notation:FilteringStyle"/>
@@ -946,8 +946,8 @@
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.0"/>
                                     <layoutConstraint
-                                    height="161"
-                                    width="548"
+                                    height="151"
+                                    width="486"
                                     x="2" xsi:type="notation:Bounds"/>
                                     </children>
                                     <children type="4011">
@@ -1058,8 +1058,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.1/@activity/@activity/@activities.2"/>
 
                                     <layoutConstraint
-                                    x="333"
-                                    xsi:type="notation:Bounds" y="15"/>
+                                    x="245"
+                                    xsi:type="notation:Bounds" y="10"/>
                                     </children>
 
                                     <children type="4002 bw.jdbc.JDBCQuery">
@@ -1114,8 +1114,8 @@
                                     <layoutConstraint
                                     height="40"
                                     width="40"
-                                    x="-13"
-                                    xsi:type="notation:Bounds" y="29"/>
+                                    x="9"
+                                    xsi:type="notation:Bounds" y="11"/>
                                     </children>
 
                                     <children type="4002">
@@ -1168,8 +1168,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.1/@activity/@activity/@activities.4"/>
 
                                     <layoutConstraint
-                                    x="124"
-                                    xsi:type="notation:Bounds" y="29"/>
+                                    x="118"
+                                    xsi:type="notation:Bounds" y="11"/>
                                     </children>
 
                                     <styles xsi:type="notation:DrawerStyle"/>
@@ -1193,8 +1193,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.1/@activity/@activity"/>
 
                                     <layoutConstraint
-                                    height="123"
-                                    width="466" xsi:type="notation:Bounds"/>
+                                    height="110"
+                                    width="381" xsi:type="notation:Bounds"/>
                                     </children>
 
                                     <styles xsi:type="notation:SortingStyle"/>
@@ -1213,8 +1213,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.1/@activity"/>
 
                                     <layoutConstraint
-                                    height="123"
-                                    width="469"
+                                    height="110"
+                                    width="384"
                                     x="15" xsi:type="notation:Bounds"/>
                                     </children>
                                     <styles xsi:type="notation:SortingStyle"/>
@@ -1228,8 +1228,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.1/@activity"/>
 
                                     <layoutConstraint
-                                    height="147"
-                                    width="509" xsi:type="notation:Bounds"/>
+                                    height="134"
+                                    width="424" xsi:type="notation:Bounds"/>
                                     </children>
                                     <styles xsi:type="notation:SortingStyle"/>
                                     <styles xsi:type="notation:FilteringStyle"/>
@@ -1286,10 +1286,10 @@
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.1"/>
                                     <layoutConstraint
-                                    height="166"
-                                    width="571"
+                                    height="153"
+                                    width="486"
                                     x="2"
-                                    xsi:type="notation:Bounds" y="160"/>
+                                    xsi:type="notation:Bounds" y="150"/>
                                     </children>
                                     <styles xsi:type="notation:SortingStyle"/>
                                     <styles xsi:type="notation:FilteringStyle"/>
@@ -1300,7 +1300,7 @@
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.0"/>
                                     <layoutConstraint
-                                    height="357" width="590" xsi:type="notation:Bounds"/>
+                                    height="334" width="561" xsi:type="notation:Bounds"/>
                                     </children>
                                     <styles xsi:type="notation:DrawerStyle"/>
                                     <styles xsi:type="notation:SortingStyle"/>
@@ -1315,7 +1315,7 @@
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity"/>
                                     <layoutConstraint height="384"
-                                    width="600" xsi:type="notation:Bounds"/>
+                                    width="515" xsi:type="notation:Bounds"/>
                                 </children>
                                 <styles xsi:type="notation:SortingStyle"/>
                                 <styles xsi:type="notation:FilteringStyle"/>
@@ -1324,7 +1324,8 @@
                             <styles xsi:type="bwnotation:BackgroundStyle"/>
                             <styles xsi:type="bwnotation:ResizingStyle"/>
                             <element href="//0/@process/@activity"/>
-                            <layoutConstraint height="384" width="603" xsi:type="notation:Bounds"/>
+                            <layoutConstraint height="365" width="444"
+                                x="30" xsi:type="notation:Bounds" y="20"/>
                         </children>
                         <styles xsi:type="notation:SortingStyle"/>
                         <styles xsi:type="notation:FilteringStyle"/>
@@ -1334,8 +1335,7 @@
                     <styles xsi:type="bwnotation:BackgroundStyle"/>
                     <styles xsi:type="bwnotation:ResizingStyle"/>
                     <element href="//0/@process/@activity"/>
-                    <layoutConstraint height="408" width="603" x="1"
-                        xsi:type="notation:Bounds" y="1"/>
+                    <layoutConstraint height="409" width="519" xsi:type="notation:Bounds"/>
                 </children>
                 <styles xsi:type="notation:SortingStyle"/>
                 <styles xsi:type="notation:FilteringStyle"/>
@@ -1343,7 +1343,7 @@
             </children>
             <styles fontName="Segoe UI" lineColor="0" xsi:type="notation:ShapeStyle"/>
             <element href="//0/@process"/>
-            <layoutConstraint height="460" width="945" xsi:type="notation:Bounds"/>
+            <layoutConstraint height="460" width="860" xsi:type="notation:Bounds"/>
         </children>
         <styles xsi:type="notation:DiagramStyle"/>
         <element href="//0"/>
@@ -1367,7 +1367,7 @@
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
             <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@links/@children.1"/>
-            <bendpoints points="[25, -5, -147, 0]$[148, 0, -24, 5]" xsi:type="notation:RelativeBendpoints"/>
+            <bendpoints points="[25, -5, -109, 0]$[110, 0, -24, 5]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
         <edges
             source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.1/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.1"
@@ -1389,7 +1389,7 @@
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="Segoe UI" xsi:type="notation:FontStyle"/>
             <element href="//0/@process/@activity/@activity/@activities.0/@messages.1/@activity/@activity/@links/@children.1"/>
-            <bendpoints points="[25, -2, -184, 12]$[185, -12, -24, 2]" xsi:type="notation:RelativeBendpoints"/>
+            <bendpoints points="[25, -1, -102, 0]$[103, 0, -24, 1]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
     </notation:Diagram>
     <tibex:NamespaceRegistry enabled="true">
@@ -1398,9 +1398,9 @@
         <tibex:namespaceItem
             namespace="http://www.w3.org/2001/XMLSchema" prefix="xsd"/>
         <tibex:namespaceItem
-            namespace="http://xmlns.example.com/20190822081305PLT" prefix="tns1"/>
+            namespace="http://xmlns.example.com/20190826151954PLT" prefix="tns1"/>
         <tibex:namespaceItem
-            namespace="http://www.tibco.com/namespaces/tnt/plugins/jdbc+1cc88c2a-1f88-4b7d-aba7-358943433e78+input" prefix="tns2"/>
+            namespace="http://www.tibco.com/namespaces/tnt/plugins/jdbc+cc580b30-25ac-446b-8b53-9d34e2896b50+input" prefix="tns2"/>
     </tibex:NamespaceRegistry>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="/T1551766170793Converted/JsonSchema"/>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://tns.tibco.com/bw/REST"/>
@@ -1463,11 +1463,11 @@
     <bpws:scope name="scope">
         <bpws:flow name="flow">
             <bpws:links/>
-            <bpws:pick createInstance="yes" name="pick" tibex:xpdlId="ed2249c5-e64c-43a4-ac74-23dbe136104c">
+            <bpws:pick createInstance="yes" name="pick" tibex:xpdlId="8c541505-6d7c-4a5f-82d3-6e6fb6239e50">
                 <bpws:onMessage operation="get"
                     partnerLink="inventory-usd"
                     portType="ns0:inventory-usd"
-                    tibex:xpdlId="62e77763-e652-4891-9866-6f2240fcf959" variable="get">
+                    tibex:xpdlId="ff22fe23-aa77-4b25-8636-953648a491c3" variable="get">
                     <bpws:scope name="scope1">
                         <bpws:flow name="flow1">
                             <bpws:links>
@@ -1475,19 +1475,19 @@
                                 <bpws:link name="RenderJSONTogetOut" tibex:linkType="SUCCESS"/>
                             </bpws:links>
                             <bpws:empty name="OnMessageStart"
-                                tibex:constructor="onMessageStart" tibex:xpdlId="02b3d3d7-4bd2-4547-8b86-0bce17b65a90"/>
+                                tibex:constructor="onMessageStart" tibex:xpdlId="b62cfd06-698c-4981-9352-7d324c84e07a"/>
                             <bpws:empty name="OnMessageEnd"
-                                tibex:constructor="onMessageEnd" tibex:xpdlId="7d0ba6fa-f090-4ab9-9fb0-96a5b5b05fee"/>
+                                tibex:constructor="onMessageEnd" tibex:xpdlId="2144d6aa-00a6-4837-8182-7fefc6a62ed3"/>
                             <bpws:reply name="getOut" operation="get"
                                 partnerLink="inventory-usd"
                                 portType="ns0:inventory-usd"
-                                tibex:xpdlId="bb5d87e8-481a-4d2b-8a0c-c083c28ff4a7" variable="getOut-input">
+                                tibex:xpdlId="2938b162-db01-43f0-85aa-2d389ba48df3" variable="getOut-input">
                                 <tibex:inputBindings>
                                     <tibex:partBinding
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns1=&quot;http://xmlns.example.com/20190822081305PLT&quot; xmlns:tns3=&quot;/T1551766170793Converted/JsonSchema&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;RenderJSON&quot;/>&#xa;    &lt;xsl:template name=&quot;getOut-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns3:InventoryAll_Response>&#xa;            &lt;tns3:dialogAction>&#xa;                &lt;tns3:type>&#xa;                    &lt;xsl:value-of select=&quot;&amp;quot;closed&amp;quot;&quot;/>&#xa;                &lt;/tns3:type>&#xa;                &lt;tns3:fulfillmentState>&#xa;                    &lt;xsl:value-of select=&quot;&amp;quot;fulfilled&amp;quot;&quot;/>&#xa;                &lt;/tns3:fulfillmentState>&#xa;                &lt;tns3:message>&#xa;                    &lt;tns3:contentType>&#xa;                        &lt;xsl:value-of select=&quot;&amp;quot;json&amp;quot;&quot;/>&#xa;                    &lt;/tns3:contentType>&#xa;                    &lt;tns3:content>&#xa;                        &lt;xsl:value-of select=&quot;$RenderJSON/jsonString&quot;/>&#xa;                    &lt;/tns3:content>&#xa;                &lt;/tns3:message>&#xa;            &lt;/tns3:dialogAction>&#xa;        &lt;/tns3:InventoryAll_Response>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns1=&quot;http://xmlns.example.com/20190826151954PLT&quot; xmlns:tns3=&quot;/T1551766170793Converted/JsonSchema&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;RenderJSON&quot;/>&#xa;    &lt;xsl:template name=&quot;getOut-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns3:InventoryAll_Response>&#xa;            &lt;tns3:dialogAction>&#xa;                &lt;tns3:type>&#xa;                    &lt;xsl:value-of select=&quot;&amp;quot;closed&amp;quot;&quot;/>&#xa;                &lt;/tns3:type>&#xa;                &lt;tns3:fulfillmentState>&#xa;                    &lt;xsl:value-of select=&quot;&amp;quot;fulfilled&amp;quot;&quot;/>&#xa;                &lt;/tns3:fulfillmentState>&#xa;                &lt;tns3:message>&#xa;                    &lt;tns3:contentType>&#xa;                        &lt;xsl:value-of select=&quot;&amp;quot;json&amp;quot;&quot;/>&#xa;                    &lt;/tns3:contentType>&#xa;                    &lt;tns3:content>&#xa;                        &lt;xsl:value-of select=&quot;$RenderJSON/jsonString&quot;/>&#xa;                    &lt;/tns3:content>&#xa;                &lt;/tns3:message>&#xa;            &lt;/tns3:dialogAction>&#xa;        &lt;/tns3:InventoryAll_Response>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                                 </tibex:inputBindings>
                                 <tibex:inputBinding expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:tns1="http://xmlns.example.com/20190822081305PLT" xmlns:tns3="/T1551766170793Converted/JsonSchema" version="2.0"&gt;
+&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:tns1="http://xmlns.example.com/20190826151954PLT" xmlns:tns3="/T1551766170793Converted/JsonSchema" version="2.0"&gt;
     &lt;xsl:param name="RenderJSON"/&gt;
     &lt;xsl:template name="getOut-input" match="/"&gt;
         &lt;tns1:getResponse&gt;
@@ -1523,13 +1523,13 @@
                                     inputVariable="JDBCQuery-input"
                                     name="JDBCQuery"
                                     outputVariable="JDBCQuery"
-                                    tibex:xpdlId="17fd86be-aa40-4953-8fb0-c1f16c644f6f" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                                    tibex:xpdlId="0a3659e9-fd9e-409d-9c51-3c3a9001cb80" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                                     <bpws:sources>
                                     <bpws:source linkName="JDBCQueryToRenderJSON"/>
                                     </bpws:sources>
                                     <tibex:inputBindings>
                                     <tibex:inputBinding
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns3=&quot;http://www.tibco.com/namespaces/tnt/plugins/jdbc+17fd86be-aa40-4953-8fb0-c1f16c644f6f+input&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:template name=&quot;JDBCQuery-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns3:jdbcQueryActivityInput/>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns3=&quot;http://www.tibco.com/namespaces/tnt/plugins/jdbc+0a3659e9-fd9e-409d-9c51-3c3a9001cb80+input&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:template name=&quot;JDBCQuery-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns3:jdbcQueryActivityInput/>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                                     </tibex:inputBindings>
                                     <tibex:config>
                                     <bwext:BWActivity
@@ -1577,7 +1577,7 @@
                                     inputVariable="RenderJSON-input"
                                     name="RenderJSON"
                                     outputVariable="RenderJSON"
-                                    tibex:xpdlId="1f6f4457-ed3f-4955-8bc3-b5105c761b6f" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                                    tibex:xpdlId="6c045152-3cf6-47ea-82c4-765512dfd208" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                                     <bpws:targets>
                                     <bpws:target linkName="JDBCQueryToRenderJSON"/>
                                     </bpws:targets>
@@ -1616,7 +1616,7 @@
                 <bpws:onMessage operation="get"
                     partnerLink="inventory-euro"
                     portType="ns0:inventory-euro"
-                    tibex:xpdlId="08c623d5-f109-4cd5-9f81-d18ea8f1fa7f" variable="get1">
+                    tibex:xpdlId="46fb93f4-dc9f-47ed-b118-0b51608ec0f0" variable="get1">
                     <bpws:scope name="scope2">
                         <bpws:flow name="flow2">
                             <bpws:links>
@@ -1625,19 +1625,19 @@
                                 <bpws:link name="RenderJSON1TogetOut1" tibex:linkType="SUCCESS"/>
                             </bpws:links>
                             <bpws:empty name="OnMessageStart1"
-                                tibex:constructor="onMessageStart" tibex:xpdlId="d30d6324-3fa4-4002-a5c8-e8778fccd804"/>
+                                tibex:constructor="onMessageStart" tibex:xpdlId="61937ae5-d076-422b-937d-4ec5910ed6ad"/>
                             <bpws:empty name="OnMessageEnd1"
-                                tibex:constructor="onMessageEnd" tibex:xpdlId="5b89eb26-1308-4ca2-95eb-3cf7a90431c7"/>
+                                tibex:constructor="onMessageEnd" tibex:xpdlId="85ad04b0-2103-4dc5-a77b-7cc50eaf1bb2"/>
                             <bpws:reply name="getOut1" operation="get"
                                 partnerLink="inventory-euro"
                                 portType="ns0:inventory-euro"
-                                tibex:xpdlId="b415f738-94f7-4e25-baf2-949405d15823" variable="getOut1-input">
+                                tibex:xpdlId="2cb0c843-ac4a-480f-b8a7-3b1d02e22fee" variable="getOut1-input">
                                 <tibex:inputBindings>
                                     <tibex:partBinding
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns1=&quot;http://xmlns.example.com/20190822081305PLT&quot; xmlns:tns=&quot;/T1551766170793Converted/JsonSchema&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;RenderJSON1&quot;/>&#xa;    &lt;xsl:template name=&quot;getOut1-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns:InventoryAll_Response>&#xa;            &lt;tns:dialogAction>&#xa;                &lt;tns:type>&#xa;                    &lt;xsl:value-of select=&quot;&amp;quot;closed&amp;quot;&quot;/>&#xa;                &lt;/tns:type>&#xa;                &lt;tns:fulfillmentState>&#xa;                    &lt;xsl:value-of select=&quot;&amp;quot;fulfilled&amp;quot;&quot;/>&#xa;                &lt;/tns:fulfillmentState>&#xa;                &lt;tns:message>&#xa;                    &lt;tns:contentType>&#xa;                        &lt;xsl:value-of select=&quot;&amp;quot;json&amp;quot;&quot;/>&#xa;                    &lt;/tns:contentType>&#xa;                    &lt;tns:content>&#xa;                        &lt;xsl:value-of select=&quot;$RenderJSON1/jsonString&quot;/>&#xa;                    &lt;/tns:content>&#xa;                &lt;/tns:message>&#xa;            &lt;/tns:dialogAction>&#xa;        &lt;/tns:InventoryAll_Response>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns1=&quot;http://xmlns.example.com/20190826151954PLT&quot; xmlns:tns=&quot;/T1551766170793Converted/JsonSchema&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;RenderJSON1&quot;/>&#xa;    &lt;xsl:template name=&quot;getOut1-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns:InventoryAll_Response>&#xa;            &lt;tns:dialogAction>&#xa;                &lt;tns:type>&#xa;                    &lt;xsl:value-of select=&quot;&amp;quot;closed&amp;quot;&quot;/>&#xa;                &lt;/tns:type>&#xa;                &lt;tns:fulfillmentState>&#xa;                    &lt;xsl:value-of select=&quot;&amp;quot;fulfilled&amp;quot;&quot;/>&#xa;                &lt;/tns:fulfillmentState>&#xa;                &lt;tns:message>&#xa;                    &lt;tns:contentType>&#xa;                        &lt;xsl:value-of select=&quot;&amp;quot;json&amp;quot;&quot;/>&#xa;                    &lt;/tns:contentType>&#xa;                    &lt;tns:content>&#xa;                        &lt;xsl:value-of select=&quot;$RenderJSON1/jsonString&quot;/>&#xa;                    &lt;/tns:content>&#xa;                &lt;/tns:message>&#xa;            &lt;/tns:dialogAction>&#xa;        &lt;/tns:InventoryAll_Response>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                                 </tibex:inputBindings>
                                 <tibex:inputBinding expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:tns1="http://xmlns.example.com/20190822081305PLT" xmlns:tns="/T1551766170793Converted/JsonSchema" version="2.0"&gt;&lt;xsl:param name="RenderJSON1"/&gt;&lt;xsl:template name="getOut1-input" match="/"&gt;&lt;tns1:getResponse1&gt;&lt;item&gt;&lt;tns:InventoryAll_Response&gt;&lt;tns:dialogAction&gt;&lt;tns:type&gt;&lt;xsl:value-of select="&amp;quot;closed&amp;quot;"/&gt;&lt;/tns:type&gt;&lt;tns:fulfillmentState&gt;&lt;xsl:value-of select="&amp;quot;fulfilled&amp;quot;"/&gt;&lt;/tns:fulfillmentState&gt;&lt;tns:message&gt;&lt;tns:contentType&gt;&lt;xsl:value-of select="&amp;quot;json&amp;quot;"/&gt;&lt;/tns:contentType&gt;&lt;tns:content&gt;&lt;xsl:value-of select="$RenderJSON1/jsonString"/&gt;&lt;/tns:content&gt;&lt;/tns:message&gt;&lt;/tns:dialogAction&gt;&lt;/tns:InventoryAll_Response&gt;&lt;/item&gt;&lt;/tns1:getResponse1&gt;&lt;/xsl:template&gt;&lt;/xsl:stylesheet&gt;</tibex:inputBinding>
+&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:tns1="http://xmlns.example.com/20190826151954PLT" xmlns:tns="/T1551766170793Converted/JsonSchema" version="2.0"&gt;&lt;xsl:param name="RenderJSON1"/&gt;&lt;xsl:template name="getOut1-input" match="/"&gt;&lt;tns1:getResponse1&gt;&lt;item&gt;&lt;tns:InventoryAll_Response&gt;&lt;tns:dialogAction&gt;&lt;tns:type&gt;&lt;xsl:value-of select="&amp;quot;closed&amp;quot;"/&gt;&lt;/tns:type&gt;&lt;tns:fulfillmentState&gt;&lt;xsl:value-of select="&amp;quot;fulfilled&amp;quot;"/&gt;&lt;/tns:fulfillmentState&gt;&lt;tns:message&gt;&lt;tns:contentType&gt;&lt;xsl:value-of select="&amp;quot;json&amp;quot;"/&gt;&lt;/tns:contentType&gt;&lt;tns:content&gt;&lt;xsl:value-of select="$RenderJSON1/jsonString"/&gt;&lt;/tns:content&gt;&lt;/tns:message&gt;&lt;/tns:dialogAction&gt;&lt;/tns:InventoryAll_Response&gt;&lt;/item&gt;&lt;/tns1:getResponse1&gt;&lt;/xsl:template&gt;&lt;/xsl:stylesheet&gt;</tibex:inputBinding>
                                 <bpws:targets>
                                     <bpws:target linkName="RenderJSON1TogetOut1"/>
                                 </bpws:targets>
@@ -1647,13 +1647,13 @@
                                     inputVariable="JDBCQuery1-input"
                                     name="JDBCQuery1"
                                     outputVariable="JDBCQuery1"
-                                    tibex:xpdlId="1cc88c2a-1f88-4b7d-aba7-358943433e78" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                                    tibex:xpdlId="cc580b30-25ac-446b-8b53-9d34e2896b50" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                                     <bpws:sources>
                                     <bpws:source linkName="JDBCQuery1ToRenderJSON1"/>
                                     </bpws:sources>
                                     <tibex:inputBindings>
                                     <tibex:inputBinding
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.tibco.com/namespaces/tnt/plugins/jdbc+1cc88c2a-1f88-4b7d-aba7-358943433e78+input&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:template name=&quot;JDBCQuery1-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns2:jdbcQueryActivityInput/>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.tibco.com/namespaces/tnt/plugins/jdbc+cc580b30-25ac-446b-8b53-9d34e2896b50+input&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:template name=&quot;JDBCQuery1-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns2:jdbcQueryActivityInput/>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                                     </tibex:inputBindings>
                                     <tibex:config>
                                     <bwext:BWActivity
@@ -1701,7 +1701,7 @@
                                     inputVariable="RenderJSON1-input"
                                     name="RenderJSON1"
                                     outputVariable="RenderJSON1"
-                                    tibex:xpdlId="354bb2e8-81e9-4589-8f43-00a7f0d2c843" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                                    tibex:xpdlId="084707fd-f865-455e-b6e3-ed6e07e1b2e6" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                                     <bpws:targets>
                                     <bpws:target linkName="JDBCQuery1ToRenderJSON1"/>
                                     </bpws:targets>
@@ -1710,7 +1710,7 @@
                                     </bpws:sources>
                                     <tibex:inputBindings>
                                     <tibex:inputBinding
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://tns.tibco.com/bw/json/1551424115249&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;JDBCQuery1&quot;/>&lt;xsl:template name=&quot;RenderJSON1-input&quot; match=&quot;/&quot;>&lt;tns:inventoryDBJsonElement>&lt;tns:products>&lt;xsl:for-each select=&quot;$JDBCQuery1/Record&quot;>&lt;tns:product>&lt;xsl:if test=&quot;product_id&quot;>&lt;tns:productid>&lt;xsl:value-of select=&quot;product_id&quot;/>&lt;/tns:productid>&lt;/xsl:if>&lt;xsl:if test=&quot;product_name&quot;>&lt;tns:productname>&lt;xsl:value-of select=&quot;product_name&quot;/>&lt;/tns:productname>&lt;/xsl:if>&lt;xsl:if test=&quot;product_quantity&quot;>&lt;tns:quantity>&lt;xsl:value-of select=&quot;product_quantity&quot;/>&lt;/tns:quantity>&lt;/xsl:if>&lt;tns:unit_price>&lt;xsl:value-of select=&quot;concat(&amp;quot;€&amp;quot;,xsd:string(unit_price))&quot;/>&lt;/tns:unit_price>&lt;xsl:if test=&quot;SerialNo&quot;>&lt;tns:Serial_No>&lt;xsl:value-of select=&quot;SerialNo&quot;/>&lt;/tns:Serial_No>&lt;/xsl:if>&lt;/tns:product>&lt;/xsl:for-each>&lt;/tns:products>&lt;/tns:inventoryDBJsonElement>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://tns.tibco.com/bw/json/1551424115249&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;JDBCQuery1&quot;/>&lt;xsl:template name=&quot;RenderJSON1-input&quot; match=&quot;/&quot;>&lt;tns:inventoryDBJsonElement>&lt;tns:products>&lt;xsl:for-each select=&quot;$JDBCQuery1/Record&quot;>&lt;tns:product>&lt;xsl:if test=&quot;product_id&quot;>&lt;tns:productid>&lt;xsl:value-of select=&quot;product_id&quot;/>&lt;/tns:productid>&lt;/xsl:if>&lt;xsl:if test=&quot;product_name&quot;>&lt;tns:productname>&lt;xsl:value-of select=&quot;product_name&quot;/>&lt;/tns:productname>&lt;/xsl:if>&lt;xsl:if test=&quot;product_quantity&quot;>&lt;tns:quantity>&lt;xsl:value-of select=&quot;product_quantity&quot;/>&lt;/tns:quantity>&lt;/xsl:if>&lt;tns:unit_price>&lt;xsl:value-of select=&quot;concat(&amp;quot;EURO&amp;quot;,xsd:string(unit_price))&quot;/>&lt;/tns:unit_price>&lt;xsl:if test=&quot;SerialNo&quot;>&lt;tns:Serial_No>&lt;xsl:value-of select=&quot;SerialNo&quot;/>&lt;/tns:Serial_No>&lt;/xsl:if>&lt;/tns:product>&lt;/xsl:for-each>&lt;/tns:products>&lt;/tns:inventoryDBJsonElement>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                                     </tibex:inputBindings>
                                     <tibex:config>
                                     <bwext:BWActivity
